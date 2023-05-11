@@ -19,7 +19,8 @@
 <style>
     .set-width-opacity {
         width: 40px;
-        opacity: 0.8;
+        opacity: 0.7;
+        transition: all 0.4s ease;
     }
 
     aside {
@@ -32,5 +33,9 @@
         width: 190px;
         position: relative;
         left: 0;
+    }
+
+    a img:is(:focus, :hover) {
+        opacity: 1;
     }
 </style>
