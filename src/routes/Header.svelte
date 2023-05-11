@@ -5,18 +5,18 @@
 
 <header class="all-gap">
 	<div class="logo">
-		<a href="https://kit.svelte.dev">
+		<a href="/">
 			<img src={logo} alt="SvelteKit" />
 		</a>
 	</div>
 
 	<nav class="all-gap">
 		<ul>
-			<li aria-current={$page.url.pathname === '/about' ? 'page' : undefined}>
-				<a href="/about">Designs</a>
+			<li aria-current={$page.url.pathname === '/' ? 'page' : undefined}>
+				<a href="/">Designs</a>
 			</li>
-			<li aria-current={$page.url.pathname.startsWith('/sverdle') ? 'page' : undefined}>
-				<a href="/sverdle">Codes</a>
+			<li aria-current={$page.url.pathname.startsWith('/') ? 'page' : undefined}>
+				<a href="/">Codes</a>
 			</li>
 			<li aria-current={$page.url.pathname === '/' ? 'page' : undefined}>
 				<a href="/">All Projects</a>
@@ -26,8 +26,8 @@
 			<li aria-current={$page.url.pathname === '/about' ? 'page' : undefined}>
 				<a href="/about">About</a>
 			</li>
-			<li aria-current={$page.url.pathname.startsWith('/sverdle') ? 'page' : undefined}>
-				<a href="/sverdle">Contact</a>
+			<li aria-current={$page.url.pathname.startsWith('/contact') ? 'page' : undefined}>
+				<a href="/contact">Contact</a>
 			</li>
 		</ul>
 	</nav>

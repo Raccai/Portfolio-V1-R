@@ -5,13 +5,13 @@
 </script>
 
 <aside>
-    <a href="/">
+    <a href="https://github.com/Raccai" target="_blank">
         <img src={behance} alt="Behance" class="set-width-opacity">    
     </a>
-    <a href="/">
+    <a href="https://www.behance.net/raccai" target="_blank">
         <img src={github} alt="Github" class="set-width-opacity">    
     </a>
-    <a href="/">
+    <a href="https://www.linkedin.com/in/jose-emmanuel-laurel-98b132207/" target="_blank">
         <img src={linkedin} alt="Linkedin" class="set-width-opacity">    
     </a>
 </aside>
