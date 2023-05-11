@@ -1,16 +1,19 @@
 <script>
 	import Card from "./Card.svelte";
-	import rightAlpas from "$lib/images/alpas-right.svg"
-	import bgAlpas from "$lib/images/alpas-bg.png"
-	import rightSapphire from "$lib/images/sapphire-right.svg"
-	import bgSapphire from "$lib/images/sapphire-bg.png"
-	import rightPinque from "$lib/images/pinque-right.svg"
-	import bgPinque from "$lib/images/pinque-bg.png"
+	import rightAlpas from "$lib/images/svg/alpas-right.svg"
+	import bgAlpas from "$lib/images/png/alpas-bg.png"
+	import rightSapphire from "$lib/images/svg/sapphire-right.svg"
+	import bgSapphire from "$lib/images/png/sapphire-bg.png"
+	import rightPinque from "$lib/images/svg/pinque-right.svg"
+	import bgPinque from "$lib/images/png/pinque-bg.png"
+	import rightSigla from "$lib/images/svg/sigla-right.svg"
+	import bgSigla from "$lib/images/png/sigla-bg.png"
 
 	let images = [
 		{bg: bgAlpas, right: rightAlpas},
 		{bg: bgSapphire, right: rightSapphire},
 		{bg: bgPinque, right: rightPinque},
+		{bg: bgSigla, right: rightSigla},
 	]
 </script>
 

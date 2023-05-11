@@ -1,7 +1,7 @@
 <script>
-    import behance from '$lib/images/behance.svg';
-    import linkedin from '$lib/images/linkedin-logo.svg'
-    import github from '$lib/images/github.svg'
+    import behance from '$lib/images/svg/behance.svg';
+    import linkedin from '$lib/images/svg/linkedin-logo.svg'
+    import github from '$lib/images/svg/github.svg'
 </script>
 
 <aside>

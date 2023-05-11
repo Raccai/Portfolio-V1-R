@@ -1,6 +1,6 @@
 <script>
 	import { page } from '$app/stores';
-	import logo from '$lib/images/Tao-logo.svg'
+	import logo from '$lib/images/svg/Tao-logo.svg'
 </script>
 
 <header class="all-gap">
