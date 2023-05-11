@@ -1,8 +1,9 @@
 <script>
-// @ts-nocheck
 	import Card from "./Card.svelte";
 	import rightAlpas from "$lib/images/alpas-right.svg"
 	import bgAlpas from "$lib/images/alpas-bg.png"
+	import rightSapphire from "$lib/images/sapphire-right.svg"
+	import bgSapphire from "$lib/images/sapphire-bg.png"
 </script>
 
 <svelte:head>
@@ -14,6 +15,10 @@
 	<Card>
 		<img src={rightAlpas} alt="right part of ticket for Alpas" slot="right" class="right">
 		<img src={bgAlpas} alt="background for Alpas" slot="bg" class="bg">
+	</Card>
+	<Card>
+		<img src={rightSapphire} alt="right part of ticket for Alpas" slot="right" class="right">
+		<img src={bgSapphire} alt="background for Alpas" slot="bg" class="bg">
 	</Card>
 </section>
 
