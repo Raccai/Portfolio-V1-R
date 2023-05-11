@@ -17,7 +17,7 @@
         position: relative;
         cursor: pointer;
         transition: all 0.2s ease;
-        background: white;
+        background: var(--color-bg-0);
     }
 
     .main-div:is(:focus,:hover) {

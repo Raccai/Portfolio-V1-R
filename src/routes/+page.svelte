@@ -4,6 +4,14 @@
 	import bgAlpas from "$lib/images/alpas-bg.png"
 	import rightSapphire from "$lib/images/sapphire-right.svg"
 	import bgSapphire from "$lib/images/sapphire-bg.png"
+	import rightPinque from "$lib/images/pinque-right.svg"
+	import bgPinque from "$lib/images/pinque-bg.png"
+
+	let images = [
+		{bg: bgAlpas, right: rightAlpas},
+		{bg: bgSapphire, right: rightSapphire},
+		{bg: bgPinque, right: rightPinque},
+	]
 </script>
 
 <svelte:head>
@@ -12,14 +20,12 @@
 </svelte:head>
 
 <section>
-	<Card>
-		<img src={rightAlpas} alt="right part of ticket for Alpas" slot="right" class="right">
-		<img src={bgAlpas} alt="background for Alpas" slot="bg" class="bg">
-	</Card>
-	<Card>
-		<img src={rightSapphire} alt="right part of ticket for Alpas" slot="right" class="right">
-		<img src={bgSapphire} alt="background for Alpas" slot="bg" class="bg">
-	</Card>
+	{#each images as image}
+		<Card>
+			<img src={image.right} alt="right part of ticket for Alpas" slot="right" class="right">
+			<img src={image.bg} alt="background for Alpas" slot="bg" class="bg">
+		</Card>
+	{/each}
 </section>
 
 <style>
