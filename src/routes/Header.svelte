@@ -13,19 +13,16 @@
 	<nav class="all-gap">
 		<ul>
 			<li aria-current={$page.url.pathname === '/about' ? 'page' : undefined}>
-				<a href="/about">Design</a>
+				<a href="/about">Designs</a>
 			</li>
 			<li aria-current={$page.url.pathname.startsWith('/sverdle') ? 'page' : undefined}>
-				<a href="/sverdle">Code</a>
+				<a href="/sverdle">Codes</a>
 			</li>
 			<li aria-current={$page.url.pathname === '/' ? 'page' : undefined}>
 				<a href="/">All Projects</a>
 			</li>
 		</ul>
 		<ul>
-			<li aria-current={$page.url.pathname === '/' ? 'page' : undefined}>
-				<a href="/">Home</a>
-			</li>
 			<li aria-current={$page.url.pathname === '/about' ? 'page' : undefined}>
 				<a href="/about">About</a>
 			</li>
@@ -44,7 +41,7 @@
 	header {
 		display: flex;
 		justify-content: left;
-		padding: 60px 30px 30px 130px;
+		padding: 40px 30px 30px 60px;
 	}
 
 	.logo {

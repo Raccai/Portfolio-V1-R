@@ -1,4 +1,5 @@
 <script>
+	import Aside from './Aside.svelte';
 	import Footer from './Footer.svelte';
 	import Header from './Header.svelte';
 	import './styles.css';
@@ -8,6 +9,7 @@
 	<Header />
 
 	<main>
+		<Aside />
 		<slot />
 	</main>
 
