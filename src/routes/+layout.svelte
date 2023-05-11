@@ -32,4 +32,16 @@
 		margin: 0;
 		box-sizing: border-box;
 	}
+
+	@media (max-width: 1300px) {
+		main {
+			grid-template-columns: 190px 550px;
+		}
+	}
+
+	@media (max-width: 600px) {
+		.app {
+			margin-left: 20px;
+		}
+	}
 </style>

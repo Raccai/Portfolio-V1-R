@@ -1,5 +1,5 @@
 <footer>
-    <p>Want to talk? <a href="https://kit.svelte.dev">Hit me up</a> and let's get to work</p>
+    <p>Want to talk? <a href="/">Hit me up</a> and let's get to work</p>
 </footer>
 
 <style>
@@ -8,7 +8,7 @@
 		flex-direction: column;
 		justify-content: center;
 		align-items: center;
-		padding: 12px;
+		padding: 30px;
         color: var(--color-text-1);
 	}
 
@@ -18,7 +18,7 @@
 
 	@media (min-width: 480px) {
 		footer {
-			padding: 12px 0;
+			padding: 30px 0;
 		}
 	}
 </style>

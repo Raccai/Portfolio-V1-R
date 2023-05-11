@@ -38,4 +38,10 @@
     a img:is(:focus, :hover) {
         opacity: 1;
     }
+
+    @media (max-width: 760px) {
+		aside {
+			display: none;
+		}
+	}
 </style>
