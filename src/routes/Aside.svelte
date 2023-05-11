@@ -28,8 +28,9 @@
         justify-content: flex-start;
         align-items: center;
         gap: 40px;
+        margin-top: 30px;
         width: 190px;
-        position: absolute;
+        position: relative;
         left: 0;
     }
 </style>

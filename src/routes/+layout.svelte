@@ -21,16 +21,15 @@
 		display: flex;
 		flex-direction: column;
 		min-height: 100vh;
+		margin: 10px 0 0 100px;
 	}
 
 	main {
-		flex: 1;
-		display: flex;
-		flex-direction: column;
-		padding: 1rem;
+		display: grid;
+		grid-template-columns: 190px 1080px;
+		padding: 0;
 		width: 100%;
-		max-width: 64rem;
-		margin: 0 auto;
+		margin: 0;
 		box-sizing: border-box;
 	}
 </style>

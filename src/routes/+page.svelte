@@ -1,4 +1,6 @@
 <script>
+	import Card from "./Card.svelte";
+
 </script>
 
 <svelte:head>
@@ -7,24 +9,27 @@
 </svelte:head>
 
 <section>
-	<h1>
-		<span class="welcome">
-			<picture>
-			</picture>
-		</span>
-	</h1>
+	<Card />
+	<Card />
+	<Card />
+	<Card />
+	<Card />
+	<Card />
+	<Card />
+	<Card />
+	<Card />
+	<Card />
+	<Card />
+	<Card />
+	<Card />
 </section>
 
 <style>
 	section {
-		display: flex;
-		flex-direction: column;
-		justify-content: center;
-		align-items: center;
-		flex: 0.6;
-	}
-
-	h1 {
-		width: 100%;
+		margin-left: auto;
+		display: grid;
+		grid-template-columns: repeat(2, 500px);
+		gap: 30px;
+		margin-top: 30px;
 	}
 </style>
