@@ -24,15 +24,14 @@
     }
 
     aside {
-        position: fixed;
+        position: sticky;
+        top: 50px;
         display: flex;
         flex-direction: column;
-        justify-content: flex-start;
         align-items: center;
         gap: 40px;
-        margin: 30px 0 0 100px;
+        margin: 30px 0 0 0;
         width: 190px;
-        left: 0;
     }
 
     a img:is(:focus, :hover) {

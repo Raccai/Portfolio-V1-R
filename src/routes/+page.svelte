@@ -71,7 +71,7 @@
 		display: grid;
 		grid-template-columns: repeat(2, 500px);
 		gap: 30px;
-		margin-top: 30px;
+		margin-top: -215px;
 	}
 
 	.bg, 
@@ -94,4 +94,11 @@
 			grid-template-columns: 500px;
 		}
 	}
+
+	@media (max-width: 760px){
+		section {
+			margin-top: 30px;
+		}
+	}
+
 </style>

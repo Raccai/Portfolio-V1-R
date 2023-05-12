@@ -29,7 +29,6 @@
 		grid-template-columns: 1270px;
 		padding: 0;
 		width: 100%;
-		margin: 0;
 		box-sizing: border-box;
 	}
 
