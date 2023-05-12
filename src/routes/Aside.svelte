@@ -24,14 +24,14 @@
     }
 
     aside {
+        position: fixed;
         display: flex;
         flex-direction: column;
         justify-content: flex-start;
         align-items: center;
         gap: 40px;
-        margin-top: 30px;
+        margin: 30px 0 0 100px;
         width: 190px;
-        position: relative;
         left: 0;
     }
 

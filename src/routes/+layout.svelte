@@ -26,7 +26,7 @@
 
 	main {
 		display: grid;
-		grid-template-columns: 190px 1080px;
+		grid-template-columns: 1270px;
 		padding: 0;
 		width: 100%;
 		margin: 0;
@@ -35,7 +35,13 @@
 
 	@media (max-width: 1300px) {
 		main {
-			grid-template-columns: 190px 550px;
+			grid-template-columns: 740px;
+		}
+	}
+
+	@media (max-width: 760px){
+		main {
+			grid-template-columns: 440px;
 		}
 	}
 

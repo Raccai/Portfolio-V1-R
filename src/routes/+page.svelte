@@ -44,7 +44,6 @@
 		{bg: bgWeight, right: rightWeight},
 		{bg: bgCalc, right: rightCalc},
 		{bg: bgDict, right: rightDict},
-
 		{bg: bgGradgen, right: rightGradgen},
 		{bg: bgQR, right: rightQR},
 		{bg: bgNotes, right: rightNotes},
