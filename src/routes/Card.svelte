@@ -22,5 +22,6 @@
 
     .main-div:is(:focus,:hover) {
         transform: scale(1.03);
+        box-shadow: 2px 4px 6px rgba(0, 0, 0, 0.5);
     }
 </style>

@@ -8,6 +8,14 @@
 	import bgSigla from "$lib/images/png/sigla-bg.png"
 	import bgXP from "$lib/images/png/xp-bg.png"
 	import bgGuidon from "$lib/images/png/guidon-bg.png"
+	import bgPsw from "$lib/images/png/psw-bg.png"
+	import bgWeight from "$lib/images/png/weight-bg.png"
+	import bgCalc from "$lib/images/png/calc-bg.png"
+	import bgDict from "$lib/images/png/dict-bg.png"
+	import bgGradgen from "$lib/images/png/gradgen-bg.png"
+	import bgQR from "$lib/images/png/qr-bg.png"
+	import bgNotes from "$lib/images/png/notes-bg.png"
+	import bgVisual from "$lib/images/png/visual-bg.png"
 
 	import rightAlpas from "$lib/images/svg/alpas-right.svg"
 	import rightSapphire from "$lib/images/svg/sapphire-right.svg"
@@ -15,6 +23,14 @@
 	import rightSigla from "$lib/images/svg/sigla-right.svg"
 	import rightXP from "$lib/images/svg/xp-right.svg"
 	import rightGuidon from "$lib/images/png/guidon-right.png"
+	import rightPsw from "$lib/images/svg/psw-right.svg"
+	import rightWeight from "$lib/images/svg/weight-right.svg"
+	import rightCalc from "$lib/images/svg/calc-right.svg"
+	import rightDict from "$lib/images/svg/dict-right.svg"
+	import rightGradgen from "$lib/images/svg/gradgen-right.svg"
+	import rightQR from "$lib/images/svg/qr-right.svg"
+	import rightNotes from "$lib/images/svg/notes-right.svg"
+	import rightVisual from "$lib/images/svg/visual-right.svg"
 
 	let images = [
 		{bg: welcome, right: welcome},
@@ -24,6 +40,15 @@
 		{bg: bgSigla, right: rightSigla},
 		{bg: bgXP, right: rightXP},
 		{bg: bgGuidon, right: rightGuidon},
+		{bg: bgPsw, right: rightPsw},
+		{bg: bgWeight, right: rightWeight},
+		{bg: bgCalc, right: rightCalc},
+		{bg: bgDict, right: rightDict},
+
+		{bg: bgGradgen, right: rightGradgen},
+		{bg: bgQR, right: rightQR},
+		{bg: bgNotes, right: rightNotes},
+		{bg: bgVisual, right: rightVisual},
 	]
 </script>
 
