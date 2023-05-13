@@ -53,7 +53,7 @@
     }
 
     .header-img img {
-        width: 1000px;
+        width: 800px;
     }
 
     .short-study img {
@@ -66,12 +66,12 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
-        gap: 100px;
-        margin-left: 160px;
+        gap: 70px;
+        margin-left: 40px;
     }
 
     .text {
-        width: 550px;
+        width: 450px;
     }
 
     p {
@@ -84,7 +84,7 @@
         color: var(--color-text-2);
         border: 2px solid var(--color-theme-1);
         border-radius: 5px;
-        margin-top: 10px;
+        margin: 10px 0 0 -150px;
         font-size: 25px;
         padding: 30px 50px;
         transition: all 0.2s ease;

@@ -27,7 +27,7 @@
         {src: alpasMalaya, 
             h1: "Malaya", 
             p: "Aggressive and patriotic with a pinch of irascibility—that is Malaya. She's not afraid to hurt you if you get in the way of what she believes is right—the means matter less " +
-            "to her than the ends. She's a good person with overflowing lover for her country and desire to serve those in need despite her quick temper. Thus, to capture this, we had" + 
+            "to her than the ends. She's a good person with overflowing lover for her country and desire to serve those in need despite her quick temper. Thus, to capture this, we had " + 
             "Paola wear something akin to the Barong Tagalog in design while holding the Philippine flag. A tad heavy-handed, but we believed that was the point with her character. " +
             "As icing on the cake, her stone-cold face shows not only her strength but her hard-headed approach to solving problems in front of her.", 
             alt: "malaya poster", 
@@ -123,7 +123,7 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
-        gap: 150px;
+        gap: 60px;
     }
 
     .character img {
@@ -133,7 +133,7 @@
     }
 
     .character .text {
-        width: 550px;
+        width: 500px;
     }
 
     .credits {
@@ -143,7 +143,7 @@
 
     .header-img img,
     .credits img {
-        width: 1150px;
+        width: 950px;
         border-radius: 30px;
         box-shadow: 8px 5px 10px rgba(0, 0, 0, 0.2);
     }

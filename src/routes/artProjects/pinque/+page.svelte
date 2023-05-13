@@ -97,10 +97,12 @@
 
     .interview-container img {
         width: 500px;
+        border-radius: 20px;
+        box-shadow: 8px 5px 10px rgba(0, 0, 0, 0.3);
     }
 
     .text {
-        width: 550px;
+        width: 500px;
     }
 
     p {
