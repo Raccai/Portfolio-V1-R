@@ -23,6 +23,8 @@
             <textarea name="message" class="message" cols="30" rows="10"></textarea>
         </div>
     </div>
+
+    <button>Submit</button>
 </form>
 
 <style>
@@ -42,12 +44,14 @@
 
     label {
         font-family: var(--font-body);
-        font-size: 18px;
+        font-weight: bold;
+        font-size: 20px;
+        line-height: 40px;
     }
 
     input, 
     textarea {
-        font-size: 20px;
+        font-size: 18px;
         border: none;
         border-radius: 10px 10px 0 0;
         border-bottom: 2px solid var(--color-theme-1);
@@ -71,5 +75,21 @@
 
     .form-input:not(:first-child) {
         margin: 25px 0 0 0;
+    }
+
+    button {
+        background-color: var(--color-bg-0);
+        color: var(--color-text-2);
+        border: 2px solid var(--color-theme-1);
+        border-radius: 5px;
+        margin-top: 30px;
+        font-size: 20px;
+        padding: 10px 30px;
+    }
+
+    button:is(:focus, :hover) {
+        background-image: var(--gradient);
+        color: var(--color-text-2);
+        border: 2px solid var(--color-bg-0);
     }
 </style>

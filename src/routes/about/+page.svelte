@@ -18,16 +18,16 @@
             whether it be through film and television, or software and web development.
         </p>
         <p>
-            I began my journey in high school when I volunteered to be the Managin editor for our quiet 
+            I began my journey in high school in Riyadh when I volunteered to be the managing editor for our quiet 
             school publication <span>The Future Chronicles</span>. I then spearheaded in the creation of 
             two school publications that showcased school talent—both students and teachers alike—while dipping my toes into 
             the world of software through my internship at Al Jazirah Vehicles Agencies Co. Ltd. 
         </p>
         <p>
-            As I would continue to hone these skills in college by joining art-focused orgs and working on 
+            As I continue to hone these skills in college by joining art-focused orgs and working on 
             web development projects outside of academe, being a designer at heart I enjoy working with people
             and enabling team and client satisfaction. Not only do I value <span>beautiful</span> designs backed by
-            user accessibility, but I also desire <span>unique</span> designs so everyone feels represented, even if it means
+            user accessibility, but I also desire <span>uniqueness</span> so everyone feels represented, even if it means
             doing the extra research.
         </p>
         <p>
