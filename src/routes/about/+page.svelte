@@ -97,4 +97,51 @@
         font-size: 20px;
         line-height: 40px;
     }
+
+    @media (max-width: 1300px) {
+        article {
+            margin-left: 230px
+        }
+
+		section {
+			width: 600px;
+		}
+
+        .images {
+            width: 800px;
+            margin: 0 0 -50px -100px;
+        }
+	}
+
+	@media (max-width: 760px){
+        article {
+            margin-left: auto;
+            margin: 60px 0 0 0;
+            color: white;
+        }
+
+        section {
+            width: 550px;
+        }
+
+        .text {
+			margin-left: -20px;
+		}
+
+        .images {
+            width: 800px;
+            margin: 0 0 -50px -130px;
+        }
+	}
+
+    @media (max-width: 600px) {
+		.text {
+			width: 450px;
+		}
+
+        .images {
+            width: 600px;
+            margin: 0 0 -50px -80px;
+        }
+	}
 </style>

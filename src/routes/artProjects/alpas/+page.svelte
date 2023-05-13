@@ -64,7 +64,7 @@
             reasons and methods to stop them from helping become clearer and clearer—and darker.
         </p>
     </section>
-
+    
     <h1 class="short-study">Short Study</h1>
     <p>
         With the poster, I decided to go with a Filipino twist by adding Baybayin across the canvas considering the Filipino-centric nature of the short.
@@ -110,7 +110,8 @@
         gap: 50px;
     }
 
-    .short-study {
+    .short-study,
+    .intro p {
         margin-bottom: -50px;
     }
 
@@ -147,4 +148,61 @@
         border-radius: 30px;
         box-shadow: 8px 5px 10px rgba(0, 0, 0, 0.2);
     }
+
+    @media (max-width: 1300px) {
+		section {
+			width: 700px;
+		}
+
+        .character {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            gap: 0px;
+        }
+
+        .header-img img,
+        .credits img {
+            width: 650px;
+        }
+	}
+
+	@media (max-width: 760px){
+        article {
+            margin-left: auto;
+            margin: 60px 0 0 0;
+            color: white;
+        }
+
+        .header-img img,
+        .credits img {
+            width: 450px;
+        }
+	}
+
+    @media (max-width: 600px) {
+        article {
+            text-align: center;
+            margin-left: 45px;
+        }
+
+		section {
+			width: 350px;
+		}
+
+        .character .text {
+            width: 400px;
+        } 
+
+        .short-study + p {
+            margin-left: -35px;
+        }
+
+        .header-img img,
+        .credits img {
+            margin-left: -50px;
+            margin-bottom: -70px;
+        }
+	}
 </style>

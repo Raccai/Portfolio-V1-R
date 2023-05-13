@@ -19,7 +19,7 @@
         </p>
     </section>
 
-    <h1>Short Study</h1>
+    <h1 class="short-study">Short Study</h1>
     <p class="short-study-text">
         For each poster, we did our best to revisit the interview for each artist frequently to carefully plot the unique aspect of each design and truly communicate
         each artist's highlights as creatives. We actively communicated with the artists to get their feedback, and in the case of Danielle, worked side-by-side to
@@ -134,4 +134,93 @@
         color: var(--color-bg-0);
         border: 2px solid var(--color-bg-0);
     }
+
+    @media (max-width: 1300px) {
+        article {
+            margin-left: 230px
+        }
+
+        button {
+            margin-left: 50px;
+        }
+
+		section {
+			width: 600px;
+		}
+
+        .interview-container {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            gap: 0px;
+        }
+
+        .header-img img {
+            width: 550px;
+        }
+
+        .short-study-text, .intro {
+            width: 600px;
+        }
+	}
+
+	@media (max-width: 760px){
+        article {
+            margin-left: auto;
+            margin: 60px 0 0 0;
+            color: white;
+        }
+
+        .header-img img {
+            width: 450px;
+        }
+
+        section {
+            width: 550px;
+        }
+	}
+
+    @media (max-width: 600px) {
+		section {
+			width: 450px;
+		}
+
+        .header-img {
+            margin-left: 65px;
+        }
+
+        .short-study-text, .intro {
+            text-align: center;
+            margin-left: 20px;
+            width: 400px;
+        }
+
+        .short-study {
+            margin-left: 55px;
+        }
+
+        .interview-container {
+            text-align: center;
+            margin-left: -5px;
+        }
+
+        .interview-container .text,
+        .interview-container img {
+            width: 400px;
+        } 
+
+        .interview-container img {
+            margin-left: 10px;
+        }
+
+        .header-img img {
+            margin-left: -70px;
+            margin-bottom: -70px;
+        }
+
+        button {
+            margin-left: auto;
+        }
+	}
 </style>

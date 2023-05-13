@@ -1,94 +1,54 @@
 <script>
-
+    import underConst from "$lib/images/svg/under-const.svg"
 </script>
 
-<form>
-    <div class="input-container">
-        <div class="form-input">
-            <label for="Name">Name*</label>
-            <input type="text">
-        </div>
-        <div class="form-input">
-            <label for="email">Email*</label>
-            <input type="email">
-        </div>
-        <div class="form-input">
-            <label for="subject">Subject*</label>
-            <input type="text">
-        </div>
-        <div class="form-input">
-            <label for="message">Message*</label>
-            <textarea name="message" class="message" cols="30" rows="10"></textarea>
-        </div>
-    </div>
-
-    <button>Submit</button>
-</form>
+<article>
+    <section>
+        <img src={underConst} alt="under construction">
+    </section>
+</article>
 
 <style>
-    form {
+    article {
         position: relative;
         margin-left: auto;
 		display: flex;
         flex-direction: column;
-        align-items: center;
+        align-items: flex-start;
         margin: -225px 0 0 240px;
         color: white;
     }
 
-    .input-container {
-        width: 800px;
-    }
-
-    label {
-        font-family: var(--font-body);
-        font-weight: bold;
-        font-size: 20px;
-        line-height: 40px;
-    }
-
-    input, 
-    textarea {
-        font-size: 18px;
-        border: none;
-        border-radius: 10px 10px 0 0;
-        border-bottom: 2px solid var(--color-theme-1);
-        background-color: var(--color-bg-1);
-        color: var(--color-text-2);
-    }
-
-    input {
-        height: 30px;
-    }
-
-    .message {
-        resize: none;
-    }
-
-    .form-input {
+    section {
+        width: 900px;
         display: flex;
         flex-direction: column;
-        gap: 10px;
+        justify-content: center;
+        align-items: center;
     }
+    
+    @media (max-width: 1300px) {
+		section {
+			width: 700px;
+		}
+	}
 
-    .form-input:not(:first-child) {
-        margin: 25px 0 0 0;
-    }
+	@media (max-width: 760px){
+        article {
+            margin-left: auto;
+            margin: 60px 0 0 0;
+            color: white;
+        }
 
-    button {
-        background-color: var(--color-bg-0);
-        color: var(--color-text-2);
-        border: 2px solid var(--color-theme-1);
-        border-radius: 5px;
-        margin-top: 30px;
-        font-size: 20px;
-        padding: 10px 30px;
-        transition: all 0.2s ease;
-    }
+		section {
+			width: 500px;
+            align-items: flex-start;
+		}
+	}
 
-    button:is(:focus, :hover) {
-        background-image: var(--gradient);
-        color: var(--color-text-2);
-        border: 2px solid var(--color-bg-0);
-    }
+    @media (max-width: 600px) {
+		section {
+			width: 450px;
+		}
+	}
 </style>
