@@ -34,4 +34,29 @@
     section p {
         font-size: 20px;
     }
+
+    @media (max-width: 1300px) {
+		section {
+			width: 700px;
+		}
+	}
+
+	@media (max-width: 760px){
+        article {
+            margin-left: auto;
+            margin: 60px 0 0 0;
+            color: white;
+        }
+
+		section {
+			width: 500px;
+            align-items: flex-start;
+		}
+	}
+
+    @media (max-width: 600px) {
+		section {
+			width: 450px;
+		}
+	}
 </style>
