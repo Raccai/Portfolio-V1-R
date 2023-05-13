@@ -84,12 +84,6 @@
         width: 600px;
     }
 
-    h1 {
-        font-size: 40px;
-        margin-bottom: 10px;
-    }
-
-    h1,
     span {
         font-weight: bold;
         background: -webkit-linear-gradient(20deg, #FFAA33, #c04f26);

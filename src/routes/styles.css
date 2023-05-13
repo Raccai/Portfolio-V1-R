@@ -24,7 +24,19 @@ body {
 	background-size: 100vw 100vh;
 }
 
-h1,
+h1 {
+	font-size: 60px;
+    margin-bottom: 10px;
+}
+
+h1 {
+	font-weight: bold;
+	background: -webkit-linear-gradient(20deg, #FFAA33, #c04f26);
+	-webkit-background-clip: text;
+	background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+
 h2,
 p {
 	font-weight: 400;
@@ -42,11 +54,6 @@ a {
 
 a:is(:focus, :hover) {
 	color: var(--color-theme-1);
-}
-
-h1 {
-	font-size: 2rem;
-	text-align: center;
 }
 
 h2 {

@@ -8,7 +8,7 @@
 		flex-direction: column;
 		justify-content: center;
 		align-items: center;
-		padding: 30px;
+		margin-left: -60px;
         color: var(--color-text-1);
 	}
 

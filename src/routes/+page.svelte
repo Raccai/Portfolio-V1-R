@@ -40,14 +40,14 @@
 		{bg: bgSigla, right: rightSigla, link: "/artProjects/sigla"},
 		{bg: bgXP, right: rightXP, link: "/artProjects/xp"},
 		{bg: bgGuidon, right: rightGuidon, link: "/artProjects/guidon"},
-		{bg: bgPsw, right: rightPsw, link: "/"},
-		{bg: bgWeight, right: rightWeight, link: "/"},
-		{bg: bgCalc, right: rightCalc, link: "/"},
-		{bg: bgDict, right: rightDict, link: "/"},
-		{bg: bgGradgen, right: rightGradgen, link: "/"},
-		{bg: bgQR, right: rightQR, link: "/"},
-		{bg: bgNotes, right: rightNotes, link: "/"},
-		{bg: bgVisual, right: rightVisual, link: "/"},
+		{bg: bgPsw, right: rightPsw, link: "/codeProjects/passGen"},
+		{bg: bgWeight, right: rightWeight, link: "/codeProjects/weightConv"},
+		{bg: bgCalc, right: rightCalc, link: "/codeProjects/simpleCalc"},
+		{bg: bgDict, right: rightDict, link: "/codeProjects/simpleDict"},
+		{bg: bgGradgen, right: rightGradgen, link: "/codeProjects/gradientGen"},
+		{bg: bgQR, right: rightQR, link: "/codeProjects/simpleQR"},
+		{bg: bgNotes, right: rightNotes, link: "/codeProjects/simpleNotes"},
+		{bg: bgVisual, right: rightVisual, link: "/codeProjects/sortingVisual"},
 	]
 </script>
 
