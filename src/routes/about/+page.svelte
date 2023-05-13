@@ -24,7 +24,7 @@
             the world of software through my internship at Al Jazirah Vehicles Agencies Co. Ltd. 
         </p>
         <p>
-            As I continue to hone these skills in college by joining art-focused orgs and working on 
+            As I continue to hone these skills and learn from peers in college by joining art-focused orgs and working on 
             web development projects outside of academe, being a designer at heart I enjoy working with people
             and enabling team and client satisfaction. Not only do I value <span>beautiful</span> designs backed by
             user accessibility, but I also desire <span>uniqueness</span> so everyone feels represented, even if it means
@@ -94,6 +94,7 @@
         font-weight: bold;
         background: -webkit-linear-gradient(20deg, #FFAA33, #c04f26);
         -webkit-background-clip: text;
+        background-clip: text;
         -webkit-text-fill-color: transparent;
     }
 

@@ -33,34 +33,36 @@
 	import rightVisual from "$lib/images/svg/visual-right.svg"
 
 	let images = [
-		{bg: welcome, right: welcome},
-		{bg: bgAlpas, right: rightAlpas},
-		{bg: bgSapphire, right: rightSapphire},
-		{bg: bgPinque, right: rightPinque},
-		{bg: bgSigla, right: rightSigla},
-		{bg: bgXP, right: rightXP},
-		{bg: bgGuidon, right: rightGuidon},
-		{bg: bgPsw, right: rightPsw},
-		{bg: bgWeight, right: rightWeight},
-		{bg: bgCalc, right: rightCalc},
-		{bg: bgDict, right: rightDict},
-		{bg: bgGradgen, right: rightGradgen},
-		{bg: bgQR, right: rightQR},
-		{bg: bgNotes, right: rightNotes},
-		{bg: bgVisual, right: rightVisual},
+		{bg: welcome, right: welcome, link: "/"},
+		{bg: bgAlpas, right: rightAlpas, link: "/artProjects/alpas"},
+		{bg: bgSapphire, right: rightSapphire, link: "/artProjects/sapphire"},
+		{bg: bgPinque, right: rightPinque, link: "/artProjects/pinque"},
+		{bg: bgSigla, right: rightSigla, link: "/artProjects/sigla"},
+		{bg: bgXP, right: rightXP, link: "/artProjects/xp"},
+		{bg: bgGuidon, right: rightGuidon, link: "/artProjects/guidon"},
+		{bg: bgPsw, right: rightPsw, link: "/"},
+		{bg: bgWeight, right: rightWeight, link: "/"},
+		{bg: bgCalc, right: rightCalc, link: "/"},
+		{bg: bgDict, right: rightDict, link: "/"},
+		{bg: bgGradgen, right: rightGradgen, link: "/"},
+		{bg: bgQR, right: rightQR, link: "/"},
+		{bg: bgNotes, right: rightNotes, link: "/"},
+		{bg: bgVisual, right: rightVisual, link: "/"},
 	]
 </script>
 
 <svelte:head>
 	<title>Home: Projects</title>
-	<meta name="description" content="Svelte demo app" />
+	<meta name="description" content="Raccai/EJ Porfolio Version 1" />
 </svelte:head>
 
 <section>
 	{#each images as image}
 		<Card>
-			<img src={image.right} alt="right part of ticket for Alpas" slot="right" class="right">
-			<img src={image.bg} alt="background for Alpas" slot="bg" class="bg">
+			<a href={image.link}>
+				<img src={image.right} alt="right part of ticket for Alpas" class="right">
+				<img src={image.bg} alt="background for Alpas" class="bg">
+			</a>
 		</Card>
 	{/each}
 </section>

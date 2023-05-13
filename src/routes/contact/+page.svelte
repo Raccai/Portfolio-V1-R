@@ -85,6 +85,7 @@
         margin-top: 30px;
         font-size: 20px;
         padding: 10px 30px;
+        transition: all 0.2s ease;
     }
 
     button:is(:focus, :hover) {

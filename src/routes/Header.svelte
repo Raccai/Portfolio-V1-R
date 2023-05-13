@@ -13,7 +13,7 @@
 	<nav class="all-gap">
 		<ul>
 			<li aria-current={$page.url.pathname === '/' ? 'page' : undefined}>
-				<a href="/">Designs</a>
+				<a href="/" class:active={$page.url.pathname==='/'}>Designs</a>
 				<span class="dot"></span>
 			</li>
 			<li aria-current={$page.url.pathname.startsWith('/') ? 'page' : undefined}>
@@ -27,11 +27,11 @@
 		</ul>
 		<ul>
 			<li aria-current={$page.url.pathname === '/about' ? 'page' : undefined}>
-				<a href="/about">About</a>
+				<a href="/about" class:active={$page.url.pathname==='/about'}>About</a>
 				<span class="dot"></span>
 			</li>
 			<li aria-current={$page.url.pathname.startsWith('/contact') ? 'page' : undefined}>
-				<a href="/contact">Contact</a>
+				<a href="/contact" class:active={$page.url.pathname==='/contact'}>Contact</a>
 				<span class="dot"></span>
 			</li>
 		</ul>
@@ -104,7 +104,11 @@
 		color: var(--color-theme-1);
 	}
 
-	a:hover + .dot{
+	.active {
+		color: var(--color-theme-1);
+	}
+
+	.active + .dot {
 		height: 5px;
 		width: 5px;
 		display: inline-block;

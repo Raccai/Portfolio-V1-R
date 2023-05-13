@@ -4,8 +4,7 @@
 <!-- svelte-ignore a11y-no-noninteractive-tabindex -->
 <div class="main-div" id="main-div" tabindex="0">
     <div class="img">
-        <slot name="right" />
-        <slot name="bg"/>
+        <slot/>
     </div>
 </div>
 
