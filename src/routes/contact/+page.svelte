@@ -1,17 +1,75 @@
-<div>
-    <h1>Hello</h1>
-    <p>Where you? This is a test...</p>
-</div>
+<script>
+    const submitHandler = () => {
+        // do something
+    }
+</script>
+
+<form on:submit|preventDefault = {submitHandler}>
+    <div class="input-container">
+        <div class="form-input">
+            <label for="Name">Name*</label>
+            <input type="text">
+        </div>
+        <div class="form-input">
+            <label for="email">Email*</label>
+            <input type="email">
+        </div>
+        <div class="form-input">
+            <label for="subject">Subject*</label>
+            <input type="text">
+        </div>
+        <div class="form-input">
+            <label for="message">Message*</label>
+            <textarea name="message" class="message" cols="30" rows="10"></textarea>
+        </div>
+    </div>
+</form>
 
 <style>
-    div {
+    form {
         position: relative;
         margin-left: auto;
 		display: flex;
         flex-direction: column;
-        align-items: flex-start;
+        align-items: center;
         margin: -225px 0 0 240px;
         color: white;
-        line-height: 10%;
+    }
+
+    .input-container {
+        width: 800px;
+    }
+
+    label {
+        font-family: var(--font-body);
+        font-size: 18px;
+    }
+
+    input, 
+    textarea {
+        font-size: 20px;
+        border: none;
+        border-radius: 10px 10px 0 0;
+        border-bottom: 2px solid var(--color-theme-1);
+        background-color: var(--color-bg-1);
+        color: var(--color-text-2);
+    }
+
+    input {
+        height: 30px;
+    }
+
+    .message {
+        resize: none;
+    }
+
+    .form-input {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .form-input:not(:first-child) {
+        margin: 25px 0 0 0;
     }
 </style>
