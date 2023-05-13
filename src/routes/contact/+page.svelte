@@ -1,10 +1,8 @@
 <script>
-    const submitHandler = () => {
-        // do something
-    }
+
 </script>
 
-<form on:submit|preventDefault = {submitHandler}>
+<form>
     <div class="input-container">
         <div class="form-input">
             <label for="Name">Name*</label>

@@ -6,6 +6,10 @@
     <section>
         <img src={underConst} alt="under construction">
     </section>
+    <section>
+        <h1>In the meantime...</h1>
+        <p>Check the project out on github by <a href="https://github.com/Raccai/Password-Gen-R" target="_blank">clicking me.</a></p>
+    </section>
 </article>
 
 <style>
@@ -19,7 +23,15 @@
         color: white;
     }
 
-    img {
+    section {
         width: 900px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    section p {
+        font-size: 20px;
     }
 </style>
