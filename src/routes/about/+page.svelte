@@ -137,6 +137,7 @@
     @media (max-width: 600px) {
 		.text {
 			width: 450px;
+            margin-left: 0px;
 		}
 
         .images {
