@@ -1,54 +1,6 @@
 <script>
 	import Card from "./Card.svelte";
-	import welcome from "$lib/images/svg/welcome.svg"
-
-	import bgAlpas from "$lib/images/png/alpas-bg.png"
-	import bgSapphire from "$lib/images/png/sapphire-bg.png"
-	import bgPinque from "$lib/images/png/pinque-bg.png"
-	import bgSigla from "$lib/images/png/sigla-bg.png"
-	import bgXP from "$lib/images/png/xp-bg.png"
-	import bgGuidon from "$lib/images/png/guidon-bg.png"
-	import bgPsw from "$lib/images/png/psw-bg.png"
-	import bgWeight from "$lib/images/png/weight-bg.png"
-	import bgCalc from "$lib/images/png/calc-bg.png"
-	import bgDict from "$lib/images/png/dict-bg.png"
-	import bgGradgen from "$lib/images/png/gradgen-bg.png"
-	import bgQR from "$lib/images/png/qr-bg.png"
-	import bgNotes from "$lib/images/png/notes-bg.png"
-	import bgVisual from "$lib/images/png/visual-bg.png"
-
-	import rightAlpas from "$lib/images/svg/alpas-right.svg"
-	import rightSapphire from "$lib/images/svg/sapphire-right.svg"
-	import rightPinque from "$lib/images/svg/pinque-right.svg"
-	import rightSigla from "$lib/images/svg/sigla-right.svg"
-	import rightXP from "$lib/images/svg/xp-right.svg"
-	import rightGuidon from "$lib/images/png/guidon-right.png"
-	import rightPsw from "$lib/images/svg/psw-right.svg"
-	import rightWeight from "$lib/images/svg/weight-right.svg"
-	import rightCalc from "$lib/images/svg/calc-right.svg"
-	import rightDict from "$lib/images/svg/dict-right.svg"
-	import rightGradgen from "$lib/images/svg/gradgen-right.svg"
-	import rightQR from "$lib/images/svg/qr-right.svg"
-	import rightNotes from "$lib/images/svg/notes-right.svg"
-	import rightVisual from "$lib/images/svg/visual-right.svg"
-
-	let images = [
-		{bg: welcome, right: welcome, link: "/"},
-		{bg: bgAlpas, right: rightAlpas, link: "/artProjects/alpas", type: "design"},
-		{bg: bgSapphire, right: rightSapphire, link: "/artProjects/sapphire",  type: "design"},
-		{bg: bgPinque, right: rightPinque, link: "/artProjects/pinque",  type: "design"},
-		{bg: bgSigla, right: rightSigla, link: "/artProjects/sigla",  type: "design"},
-		{bg: bgXP, right: rightXP, link: "/artProjects/xp",  type: "design"},
-		{bg: bgGuidon, right: rightGuidon, link: "/artProjects/guidon",  type: "design"},
-		{bg: bgPsw, right: rightPsw, link: "/codeProjects/passGen", type: "code"},
-		{bg: bgWeight, right: rightWeight, link: "/codeProjects/weightConv", type: "code"},
-		{bg: bgCalc, right: rightCalc, link: "/codeProjects/simpleCalc", type: "code"},
-		{bg: bgDict, right: rightDict, link: "/codeProjects/simpleDict", type: "code"},
-		{bg: bgGradgen, right: rightGradgen, link: "/codeProjects/gradientGen", type: "code"},
-		{bg: bgQR, right: rightQR, link: "/codeProjects/simpleQR", type: "code"},
-		{bg: bgNotes, right: rightNotes, link: "/codeProjects/simpleNotes", type: "code"},
-		{bg: bgVisual, right: rightVisual, link: "/codeProjects/sortingVisual", type: "code"},
-	]
+	import { Filtered } from "../stores/TypeStore";
 </script>
 
 <svelte:head>
@@ -57,13 +9,15 @@
 </svelte:head>
 
 <section>
-	{#each images as image}
-		<Card>
-			<a href={image.link}>
-				<img src={image.right} alt="right part of ticket for Alpas" class="right">
-				<img src={image.bg} alt="background for Alpas" class="bg">
-			</a>
-		</Card>
+	{#each $Filtered as image (image.id)}
+		<div>
+			<Card>
+				<a href={image.link}>
+					<img src={image.right} alt="right part of ticket for Alpas" class="right">
+					<img src={image.bg} alt="background for Alpas" class="bg">
+				</a>
+			</Card>
+		</div>
 	{/each}
 </section>
 

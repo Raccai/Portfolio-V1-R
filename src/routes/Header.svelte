@@ -1,6 +1,23 @@
 <script>
 	import { page } from '$app/stores';
 	import logo from '$lib/images/svg/Tao-logo.svg'
+	import { Type } from '../stores/TypeStore';
+
+	let filterType = "";
+
+	$: Type.set(filterType);
+
+	const filterCode = () => {
+		filterType = "code"
+	}
+
+	const filterDesign = () => {
+		filterType = "design"
+	}
+
+	const filterNone = () => {
+		filterType = ""
+	}
 </script>
 
 <header class="all-gap">
@@ -12,16 +29,19 @@
 
 	<nav class="all-gap">
 		<ul>
-			<li aria-current={$page.url.pathname === '/' ? 'page' : undefined}>
-				<a href="/" class:active={$page.url.pathname==='/'}>Designs</a>
+			<!-- svelte-ignore a11y-click-events-have-key-events -->
+			<li on:click={filterDesign}>
+				<a href="/" class:active={filterType == "design" && $page.url.pathname==='/'}>Designs</a>
 				<span class="dot"></span>
 			</li>
-			<li aria-current={$page.url.pathname.startsWith('/') ? 'page' : undefined}>
-				<a href="/">Codes</a>
+			<!-- svelte-ignore a11y-click-events-have-key-events -->
+			<li on:click={filterCode}>
+				<a href="/" class:active={filterType == "code" && $page.url.pathname==='/'}>Codes</a>
 				<span class="dot"></span>
 			</li>
-			<li aria-current={$page.url.pathname === '/' ? 'page' : undefined}>
-				<a href="/">All Projects</a>
+			<!-- svelte-ignore a11y-click-events-have-key-events -->
+			<li on:click={filterNone}>
+				<a href="/" class:active={filterType == "" && $page.url.pathname==='/'}>All Projects</a>
 				<span class="dot"></span>
 			</li>
 		</ul>

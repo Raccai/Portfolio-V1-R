@@ -20,8 +20,8 @@
             <p class="word">the</p>
         </div>
         <div class="line">
-            <p class="word">safe</p>
-            <p class="word">---------------</p>
+            <p class="word">old</p>
+            <p class="word">----------------</p>
             <p class="word">standard</p>
         </div>
         <div class="line">
