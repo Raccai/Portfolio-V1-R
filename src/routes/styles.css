@@ -12,7 +12,7 @@
 	--color-text-2: #fff5ee;
 	--column-width: 42rem;
 	--column-margin-top: 4rem;
-	--gradient: linear-gradient(0deg, var(--color-theme-1), var(--color-theme-2));
+	--gradient: linear-gradient(90deg, var(--color-theme-1), #d3653d, var(--color-theme-1));
 	font-family: var(--font-body);
 	color: var(--color-text);
 }

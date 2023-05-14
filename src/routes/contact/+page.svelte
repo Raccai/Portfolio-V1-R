@@ -1,5 +1,17 @@
 <script>
     import underConst from "$lib/images/svg/under-const.svg"
+
+    const copyLinkedin = () => {
+		navigator.clipboard.writeText("https://www.linkedin.com/in/jose-emmanuel-laurel-98b132207/");
+    }
+
+    const copyEmail = () => {
+		navigator.clipboard.writeText("jose.laurel@obf.ateneo.edu");
+    }
+
+    const copyNumber = () => {
+		navigator.clipboard.writeText("+639279524927");
+    }
 </script>
 
 <article>
@@ -15,14 +27,16 @@
             <p class="word">standard</p>
         </div>
         <div class="line">
-            <p class="word break">
+            <!-- svelte-ignore a11y-click-events-have-key-events -->
+            <p class="word break" id="linkedinCopy" on:click={copyLinkedin}>
                 <span class="letter">@</span> 
                 <span class="letter">l</span> <span class="letter">i</span>
                 <span class="letter">n</span> <span class="letter">k</span>
                 <span class="letter">e</span> <span class="letter">d</span>
                 <span class="letter">i</span> <span class="letter">n</span>
             </p>
-            <p class="word break">
+            <!-- svelte-ignore a11y-click-events-have-key-events -->
+            <p class="word break" id="emailCopy" on:click={copyEmail}>
                 <span class="letter">@</span> 
                 <span class="letter">e</span> <span class="letter">m</span>
                 <span class="letter">a</span> <span class="letter">i</span>
@@ -31,7 +45,8 @@
         </div>
         <div class="line">
             <p class="word">CALL</p>
-            <p class="word break">
+            <!-- svelte-ignore a11y-click-events-have-key-events -->
+            <p class="word break" id="numberCopy" on:click={copyNumber}>
                 <span class="letter">+</span> <span class="letter">6</span> <span class="letter">3</span>
                 <span class="letter">9</span> <span class="letter">2</span> <span class="letter">7</span>
                 <span class="letter">9</span> <span class="letter">5</span> <span class="letter">2</span>
@@ -61,12 +76,33 @@
         text-transform: uppercase;
     }
 
+    /* animation for the text */
+    @keyframes infiniteBG {
+        from {
+            background-position: 0% center;
+        }
+
+        to {
+            background-position: -200% center;
+        }
+    }
+
     .break {
         cursor: pointer;
     }
 
     .break > .letter {
         display: inline-block;
+        transition: all 0.2s ease;
+    }
+
+    .break:hover > .letter {
+        background: var(--gradient);
+        background-size: 200%;
+        -webkit-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+        animation: infiniteBG 2s linear infinite;
         transition: all 0.2s ease;
     }
 
@@ -126,4 +162,34 @@
         transition: all 0.2s ease;
         opacity: 0.2;
     }
+
+    @media (max-width: 1300px) {
+        article {
+            margin-left: 230px
+        }
+
+		section {
+			width: 650px;
+		}
+
+        p {
+            font-size: 3rem;
+        }
+	}
+
+	@media (max-width: 760px){
+        article {
+            margin-left: auto;
+            margin: 60px 0 0 0;
+            color: white;
+        }
+
+        section {
+            width: 440px;
+        }
+
+        p {
+            font-size: 2rem;
+        }
+	}
 </style>
