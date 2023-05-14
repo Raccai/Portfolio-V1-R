@@ -1,4 +1,5 @@
 <script>
+	import { fade, scale } from 'svelte/transition';
 	import Card from "./Card.svelte";
 	import { Filtered } from "../stores/TypeStore";
 </script>
@@ -10,7 +11,7 @@
 
 <section>
 	{#each $Filtered as image (image.id)}
-		<div>
+		<div in:fade>
 			<Card>
 				<a href={image.link}>
 					<img src={image.right} alt="right part of ticket for Alpas" class="right">
