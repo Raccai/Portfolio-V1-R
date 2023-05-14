@@ -1,25 +1,39 @@
 <footer>
-    <p>Want to talk? <a href="/">Hit me up</a> and let's get to work</p>
+    <!-- <p>Want to talk? <a href="/">Hit me up</a> and let's get to work</p> -->
 </footer>
 
 <style>
     footer {
 		display: flex;
-		flex-direction: column;
 		justify-content: center;
-		align-items: center;
-		margin-left: -60px;
         color: var(--color-text-1);
+		margin-bottom: 100px;
+	}
+
+	/* footer p {
+		margin-left: 250px;
 	}
 
 	footer a {
 		font-weight: bold;
 	}
 
-	@media (min-width: 480px) {
+	@media (min-width: 1380px) {
 		footer {
 			padding: 30px 0;
-			margin-left: -20px;
 		}
 	}
+
+	@media (min-width: 780px) {
+		footer {
+			padding: 30px 0;
+		}
+	}
+
+	@media (min-width: 600px) {
+		footer {
+			padding: 30px 0;
+			margin-left: -100px;
+		}
+	} */
 </style>
