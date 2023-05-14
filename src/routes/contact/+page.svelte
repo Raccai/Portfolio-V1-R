@@ -1,6 +1,4 @@
 <script>
-    import underConst from "$lib/images/svg/under-const.svg"
-
     const copyLinkedin = () => {
 		navigator.clipboard.writeText("https://www.linkedin.com/in/jose-emmanuel-laurel-98b132207/");
     }

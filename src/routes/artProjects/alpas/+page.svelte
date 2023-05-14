@@ -121,8 +121,8 @@
     }
 
     .character {
-        display: flex;
-        justify-content: space-between;
+        display: grid;
+        grid-template-columns: repeat(2, 500px);
         align-items: center;
         gap: 60px;
     }
@@ -131,10 +131,6 @@
         width: 450px;
         border-radius: 20px;
         box-shadow: 8px 5px 10px rgba(0, 0, 0, 0.5);
-    }
-
-    .character .text {
-        width: 500px;
     }
 
     .credits {
